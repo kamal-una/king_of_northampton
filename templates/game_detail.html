@@ -6,17 +6,36 @@
 
 {% block content %}
     <h3>Game: {{ game }}</h3>
-    <div class="row col-lg-5 center">
+    <div class="row col-xs-12 center">
     {% for move in game.as_game %}
-        <div class="panel-title">Move 1</div>
-            <div class="btn btn-primary col-md-2 dice" role="button">{{ move.0 }}</div>
-            <div class="btn btn-primary col-md-2 dice">{{ move.1 }}</div>
-            <div class="btn btn-primary col-md-2 dice">{{ move.2 }}</div>
-            <div class="btn btn-primary col-md-2 dice">{{ move.3 }}</div>
-            <div class="btn btn-primary col-md-2 dice">{{ move.4 }}</div>
-            <div class="btn btn-primary col-md-2 dice">{{ move.5 }}</div>
-        </div>
+        {% if forloop.last and game.next_to_move == user and move.roll < 3%}
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="row center">
+                <div class="panel-title">Click to hold dice</div>
+                <input type="checkbox" name="hold1" class="btn btn-primary dice">{{ move.0 }}
+                <input type="checkbox" name="hold2" class="btn btn-primary dice">{{ move.1 }}
+                <input type="checkbox" name="hold3" class="btn btn-primary dice">{{ move.2 }}
+                <input type="checkbox" name="hold4" class="btn btn-primary dice">{{ move.3 }}
+                <input type="checkbox" name="hold5" class="btn btn-primary dice">{{ move.4 }}
+                <input type="checkbox" name="hold6" class="btn btn-primary dice">{{ move.5 }}
+        {% else %}
+            <div class="row center">
+                <div class="btn btn-primary dice">{{ move.0 }}</div>
+                <div class="btn btn-primary dice">{{ move.1 }}</div>
+                <div class="btn btn-primary dice">{{ move.2 }}</div>
+                <div class="btn btn-primary dice">{{ move.3 }}</div>
+                <div class="btn btn-primary dice">{{ move.4 }}</div>
+                <div class="btn btn-primary dice">{{ move.5 }}</div>
+            </div>
+        {% endif %}
     {% endfor %}
+    {% if game.next_to_move == user and move.roll < 3 %}
+            <button class="btn btn-primary">Roll</button>
+            </div>
+        </form>
+    {% endif %}
     </div>
+
 
 {% endblock %}

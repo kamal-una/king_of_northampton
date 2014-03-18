@@ -3,9 +3,9 @@ from django.template.loader import get_template
 from django.template import Context
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
+from django.core.exceptions import PermissionDenied
 
-
-from .models import Game
+from .models import Game, Move
 
 # Create your views here.
 def home(request):
@@ -25,7 +25,13 @@ def home(request):
 
 
 def game_detail(request, pk):
-    print pk
     game = get_object_or_404(Game, pk=pk)
+
+    context = {'game': game}
+    if request.method == 'POST':
+        data = request.POST
+
+        game.do_move(data)
+
     html = render(request, 'game_detail.html', {'game': game})
     return HttpResponse(html)
