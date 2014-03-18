@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block p_lead %}
+{% if user.is_authenticated %}
+    Welcome back {{ user.username|title }}.
+{% else %}
+    Welcome
+{% endif %}
+{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div class="well col-lg-10 center">
+            {% include "game_list_snippet.html" with header="Games waiting for your move" games_list=waiting_games %}
+            {% include "game_list_snippet.html" with header="Other active games" games_list=other_games %}
+            {% include "game_list_snippet.html" with header="Finished games" games_list=finished_games %}
+        </div>
+    {% endif %}
+{% endblock %}
