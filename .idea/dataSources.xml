@@ -2,8 +2,9 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="4180539290">
     <data-source source="LOCAL" name="Django default" uuid="7852883d-6492-4adb-a5a7-83f60046d124">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Kamal\PycharmProjects\kamal1\kamal3db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\kdaniels\Documents\GitHub\king_of_northampton\kamal3db</jdbc-url>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.PyCharm30/config/jdbc-drivers/postgresql-driver-license.txt</url>
