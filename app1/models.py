@@ -59,7 +59,6 @@ class Game(models.Model):
         last_move = self.move_set.last()
         new_move = self.create_move()
         if last_move:
-            print "have last_move"
             new_move.roll = last_move.roll + 1
             if new_move.roll <= 3:
                 new_move.turn = last_move.turn
@@ -68,14 +67,11 @@ class Game(models.Model):
                 new_move.turn = last_move.turn + 1
                 new_move.roll = 1
         else:
-            print "first move"
             # first move
             new_move.roll = 1
             new_move.turn = 1
 
         if new_move.roll <= 3:
-
-            print "generating new_move"
 
             if 'hold1' in data:
                 new_move.dice_1 = last_move.dice_1
@@ -107,7 +103,6 @@ class Game(models.Model):
             else:
                 new_move.dice_6 = random.choice(DICE_CHOICES)[0]
 
-            print "save new_move"
             new_move.save()
             if new_move.roll == 3:
                 self.toggle_next_player()
@@ -204,8 +199,13 @@ class Game(models.Model):
         if (moves.count() == 0) or (moves.count() % 3 == 0):
             # make a first roll
             self.do_move('')
-        for move in moves:
+
+        show_moves = self.move_set.filter(roll=3)
+        for move in show_moves:
             game.append([move.dice_1, move.dice_2, move.dice_3, move.dice_4, move.dice_5, move.dice_6])
+
+        last_move = self.move_set.last()
+        game.append([last_move.dice_1, last_move.dice_2, last_move.dice_3, last_move.dice_4, last_move.dice_5, last_move.dice_6])
         return game
 
     def get_absolute_url(self):

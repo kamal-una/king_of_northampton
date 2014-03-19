@@ -53,7 +53,7 @@
       <file leaf-file-name="debug.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/site-packages/django/template/debug.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2835" selection-end="2835" vertical-scroll-proportion="0.0" vertical-offset="1043" max-vertical-offset="1734">
+            <state line="82" column="0" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1734">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app1/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="19" selection-start="4622" selection-end="4626" vertical-scroll-proportion="0.42664093" vertical-offset="2193" max-vertical-offset="4114">
+            <state line="137" column="34" selection-start="4500" selection-end="4500" vertical-scroll-proportion="0.34362933" vertical-offset="2151" max-vertical-offset="4114">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -91,7 +91,7 @@
       <file leaf-file-name="game_detail.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="36" selection-start="71" selection-end="82" vertical-scroll-proportion="-1.0" vertical-offset="0" max-vertical-offset="1105">
+            <state line="33" column="36" selection-start="1594" selection-end="1594" vertical-scroll-proportion="-3.0" vertical-offset="408" max-vertical-offset="1105">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
@@ -132,8 +132,8 @@
         <option value="$PROJECT_DIR$/app1/views.py" />
         <option value="$PROJECT_DIR$/app1/admin.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/game_detail.html" />
         <option value="$PROJECT_DIR$/static/css/site_style.css" />
+        <option value="$PROJECT_DIR$/templates/game_detail.html" />
         <option value="$PROJECT_DIR$/app1/models.py" />
       </list>
     </option>
@@ -925,13 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/template/debug.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2835" selection-end="2835" vertical-scroll-proportion="0.0" vertical-offset="1043" max-vertical-offset="1734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app1/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="36" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
@@ -953,9 +946,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/site_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="17" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="677" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/utils/importlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.7495396" vertical-offset="222" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/template/debug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="71" selection-end="82" vertical-scroll-proportion="-1.0" vertical-offset="0" max-vertical-offset="1105">
+        <state line="33" column="36" selection-start="1594" selection-end="1594" vertical-scroll-proportion="-3.0" vertical-offset="408" max-vertical-offset="1105">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
@@ -971,23 +985,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/site_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="17" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="677" max-vertical-offset="1343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/utils/importlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.7495396" vertical-offset="222" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app1/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="19" selection-start="4622" selection-end="4626" vertical-scroll-proportion="0.42664093" vertical-offset="2193" max-vertical-offset="4114">
+        <state line="137" column="34" selection-start="4500" selection-end="4500" vertical-scroll-proportion="0.34362933" vertical-offset="2151" max-vertical-offset="4114">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
