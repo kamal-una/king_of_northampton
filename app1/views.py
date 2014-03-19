@@ -11,10 +11,9 @@ from .models import Game, Move
 def home(request):
     if request.user.is_authenticated():
         user_games = Game.objects.games_for_user(request.user)
-        #active_games = user_games.filter(status='A')
+        waiting_games = user_games.filter(next_to_move=request.user, status='A')
+        other_games = user_games.exclude(next_to_move=request.user).filter(status='A')
         finished_games = user_games.exclude(status='A')
-        waiting_games = user_games.filter(next_to_move=request.user)
-        other_games = user_games.exclude(next_to_move=request.user)
         context = {'other_games': other_games,
                     'waiting_games': waiting_games,
                     'finished_games': finished_games}

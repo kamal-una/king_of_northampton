@@ -41,7 +41,6 @@ input.btn:hover {
 }
 
 .dice {
-    border-radius: 10px;
     text-align: center;
     min-height: 60px;
     color: #000;
@@ -61,12 +60,12 @@ input.btn:hover {
     padding-bottom:18px;
 }
 
-.health {
-    background-color: #d9534f;
+.current-move {
+    font-weight: 900;
 }
 
-.points {
-
+.health {
+    background-color: #d9534f;
 }
 
 .player-name {

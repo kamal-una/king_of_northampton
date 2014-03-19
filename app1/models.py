@@ -9,7 +9,6 @@ GAME_STATUS_CHOICES = (
     ('A', 'Active'),
     ('F', 'First player won'),
     ('S', 'Second player won'),
-    ('D', 'Drawn'),
 )
 
 DICE_CHOICES = (

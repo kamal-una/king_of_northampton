@@ -6,8 +6,6 @@
             {{ game|title }}:
             {% if game.status == "A" %}
                 {% if game.next_to_move == user %}Your turn{% else %}Waiting for opponents move{% endif %}
-            {% elif game.status == "D" %}
-                Draw
             {% elif game.status == "F" and user == game.first_player %}
                 You won!
             {% elif game.status == "S" and user == game.second_player %}

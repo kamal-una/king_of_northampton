@@ -3,43 +3,75 @@
 {% block p_lead %}
     <div class="col-xs-8 player-name">{{ game.first_player|title }}</div>
     <div class="progress">
-      <div class="progress-bar health" role="progressbar" aria-valuenow="{{ game.first_player_health_percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ game.first_player_health_percent }}%;">
+      <div class="progress-bar health" role="progressbar" style="width: {{ game.first_player_health_percent }}%;">
         {{ game.first_player_health }}
       </div>
     </div>
     <div class="progress">
-      <div class="progress-bar" role="progressbar" aria-valuenow="{{ game.first_player_points_percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ game.first_player_points_percent }}%;">
+      <div class="progress-bar" role="progressbar" style="width: {{ game.first_player_points_percent }}%;">
         {{ game.first_player_points }}
       </div>
     </div>
 
     <div class="col-xs-8 player-name">{{ game.second_player|title }}</div>
     <div class="progress">
-      <div class="progress-bar health" role="progressbar" aria-valuenow="{{ game.second_player_health_percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ game.second_player_health_percent }}%;">
+      <div class="progress-bar health" role="progressbar" style="width: {{ game.second_player_health_percent }}%;">
         {{ game.second_player_health }}
       </div>
     </div>
     <div class="progress">
-      <div class="progress-bar" role="progressbar" aria-valuenow="{{ game.second_player_points_percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ game.second_player_points_percent }}%;">
+      <div class="progress-bar" role="progressbar" style="width: {{ game.second_player_points_percent }}%;">
         {{ game.second_player_points }}
       </div>
     </div>
 {% endblock %}
 
 {% block content %}
+    <div class="col-sm-8 center">
+        {% if game.status == "A" %}
+            {% if game.next_to_move == user %}
+                <div class="alert alert-success">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                  <h4>It's your go!</h4>
+                  Hold the dice you want and click roll.
+                </div>
+            {% else %}
+                <div class="alert alert-info">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                  <h4>It's not your go yet.</h4>
+                  Wait for your opponent to play their turn.
+                </div>
+            {% endif %}
+        {% elif game.status == "F" and user == game.first_player %}
+            <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>You won!</h4>
+            </div>
+        {% elif game.status == "S" and user == game.second_player %}
+            <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>You won!</h4>Well done.
+            </div>
+        {% else %}
+            <div class="alert alert-error">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>You lost!</h4>Better luck next time.
+            </div>
+        {% endif %}
+    </div>
     <div class="well col-sm-8 center">
     {% for move in game.as_game %}
         <form action="" method="post">
             {% csrf_token %}
-            <div class="row center">
-                <div class="col-xs-2"><div class="well dice">{{ move.0 }}</div></div>
-                <div class="col-xs-2"><div class="well dice">{{ move.1 }}</div></div>
-                <div class="col-xs-2"><div class="well dice">{{ move.2 }}</div></div>
-                <div class="col-xs-2"><div class="well dice">{{ move.3 }}</div></div>
-                <div class="col-xs-2"><div class="well dice">{{ move.4 }}</div></div>
-                <div class="col-xs-2"><div class="well dice">{{ move.5 }}</div></div>
+            <div class="row center {% if forloop.last and game.next_to_move == user %}current-move{% endif %}">
+                <div class="col-xs-2"><div class="well dice">{% if move.0 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.0 }}{% endif %}</div></div>
+                <div class="col-xs-2"><div class="well dice">{% if move.1 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.1 }}{% endif %}</div></div>
+                <div class="col-xs-2"><div class="well dice">{% if move.2 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.2 }}{% endif %}</div></div>
+                <div class="col-xs-2"><div class="well dice">{% if move.3 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.3 }}{% endif %}</div></div>
+                <div class="col-xs-2"><div class="well dice">{% if move.4 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.4 }}{% endif %}</div></div>
+                <div class="col-xs-2"><div class="well dice">{% if move.5 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.5 }}{% endif %}</div></div>
             </div>
-            {% if forloop.last and game.next_to_move == user %}
+            {% if forloop.last and game.next_to_move == user and game.status == "A" %}
             <div class="row center checkbox-row">
                 <div class="col-xs-2"><input type="checkbox" name="hold1" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
                 <div class="col-xs-2"><input type="checkbox" name="hold2" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
