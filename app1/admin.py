@@ -7,7 +7,7 @@ class GameAdmin(admin.ModelAdmin):
 
 
 class MoveAdmin(admin.ModelAdmin):
-    list_display = ('game', 'roll', 'dice_1', 'dice_2', 'dice_3', 'dice_4', 'dice_5', 'dice_6', 'comment')
+    list_display = ('game', 'turn', 'roll', 'dice_1', 'dice_2', 'dice_3', 'dice_4', 'dice_5', 'dice_6', 'comment')
 
 
 admin.site.register(Game, GameAdmin)

@@ -41,7 +41,7 @@ input.btn:hover {
 }
 
 .dice {
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     min-height: 60px;
     color: #000;
@@ -50,4 +50,25 @@ input.btn:hover {
      -moz-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
     padding: 18px;
+}
+
+.checkbox {
+    width: 20px;
+    padding: 20px;
+}
+
+.checkbox-row {
+    padding-bottom:18px;
+}
+
+.health {
+    background-color: #d9534f;
+}
+
+.points {
+
+}
+
+.player-name {
+    font-size: 22pt;
 }

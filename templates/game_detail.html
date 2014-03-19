@@ -1,41 +1,59 @@
 {% extends "base.html" %}
 
 {% block p_lead %}
-    {{ game.first_player|title }} vs {{ game.second_player|title }}.
+    <div class="col-xs-8 player-name">{{ game.first_player|title }}</div>
+    <div class="progress">
+      <div class="progress-bar health" role="progressbar" aria-valuenow="{{ game.first_player_health_percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ game.first_player_health_percent }}%;">
+        {{ game.first_player_health }}
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{ game.first_player_points_percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ game.first_player_points_percent }}%;">
+        {{ game.first_player_points }}
+      </div>
+    </div>
+
+    <div class="col-xs-8 player-name">{{ game.second_player|title }}</div>
+    <div class="progress">
+      <div class="progress-bar health" role="progressbar" aria-valuenow="{{ game.second_player_health_percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ game.second_player_health_percent }}%;">
+        {{ game.second_player_health }}
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{ game.second_player_points_percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ game.second_player_points_percent }}%;">
+        {{ game.second_player_points }}
+      </div>
+    </div>
 {% endblock %}
 
 {% block content %}
-    <h3>Game: {{ game }}</h3>
-    <div class="row col-xs-12 center">
+    <div class="well col-sm-8 center">
     {% for move in game.as_game %}
-        {% if forloop.last and game.next_to_move == user and move.roll < 3%}
         <form action="" method="post">
             {% csrf_token %}
             <div class="row center">
-                <div class="panel-title">Click to hold dice</div>
-                <input type="checkbox" name="hold1" class="btn btn-primary dice">{{ move.0 }}
-                <input type="checkbox" name="hold2" class="btn btn-primary dice">{{ move.1 }}
-                <input type="checkbox" name="hold3" class="btn btn-primary dice">{{ move.2 }}
-                <input type="checkbox" name="hold4" class="btn btn-primary dice">{{ move.3 }}
-                <input type="checkbox" name="hold5" class="btn btn-primary dice">{{ move.4 }}
-                <input type="checkbox" name="hold6" class="btn btn-primary dice">{{ move.5 }}
-        {% else %}
-            <div class="row center">
-                <div class="btn btn-primary dice">{{ move.0 }}</div>
-                <div class="btn btn-primary dice">{{ move.1 }}</div>
-                <div class="btn btn-primary dice">{{ move.2 }}</div>
-                <div class="btn btn-primary dice">{{ move.3 }}</div>
-                <div class="btn btn-primary dice">{{ move.4 }}</div>
-                <div class="btn btn-primary dice">{{ move.5 }}</div>
+                <div class="col-xs-2"><div class="well dice">{{ move.0 }}</div></div>
+                <div class="col-xs-2"><div class="well dice">{{ move.1 }}</div></div>
+                <div class="col-xs-2"><div class="well dice">{{ move.2 }}</div></div>
+                <div class="col-xs-2"><div class="well dice">{{ move.3 }}</div></div>
+                <div class="col-xs-2"><div class="well dice">{{ move.4 }}</div></div>
+                <div class="col-xs-2"><div class="well dice">{{ move.5 }}</div></div>
             </div>
-        {% endif %}
-    {% endfor %}
-    {% if game.next_to_move == user and move.roll < 3 %}
-            <button class="btn btn-primary">Roll</button>
+            {% if forloop.last and game.next_to_move == user %}
+            <div class="row center checkbox-row">
+                <div class="col-xs-2"><input type="checkbox" name="hold1" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input type="checkbox" name="hold2" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input type="checkbox" name="hold3" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input type="checkbox" name="hold4" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input type="checkbox" name="hold5" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input type="checkbox" name="hold6" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
             </div>
+            <div class="col-xs-12 center">
+                <button class="btn btn-primary">Roll!</button>
+            </div>
+            {% endif %}
         </form>
-    {% endif %}
+    {% endfor %}
     </div>
-
 
 {% endblock %}

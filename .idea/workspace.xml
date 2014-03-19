@@ -23,22 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="31" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.5918762" vertical-offset="357" max-vertical-offset="935">
+            <state line="39" column="0" selection-start="1479" selection-end="1496" vertical-scroll-proportion="-12.192307" vertical-offset="346" max-vertical-offset="918">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="14" selection-start="170" selection-end="170" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="425">
-              <folding>
-                <marker date="1393086870738" expanded="true" signature="269:615" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -46,36 +35,7 @@
       <file leaf-file-name="game_list_snippet.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/game_list_snippet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="42" selection-start="263" selection-end="291" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app1/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="24" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="2040">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kamal1/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="8" selection-start="339" selection-end="355" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="374">
+            <state line="17" column="54" selection-start="731" selection-end="736" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -84,21 +44,46 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app1/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="714">
+            <state line="13" column="53" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="debug.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/django/template/debug.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="0" selection-start="2835" selection-end="2835" vertical-scroll-proportion="0.0" vertical-offset="1043" max-vertical-offset="1734">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app1/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="142" column="19" selection-start="4622" selection-end="4626" vertical-scroll-proportion="0.42664093" vertical-offset="2193" max-vertical-offset="4114">
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app1/forms.py">
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app1/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
+            <state line="9" column="36" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site_style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/site_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="17" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="677" max-vertical-offset="1343">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,8 +91,19 @@
       <file leaf-file-name="game_detail.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="55" selection-start="1648" selection-end="1648" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="799">
-              <folding />
+            <state line="3" column="36" selection-start="71" selection-end="82" vertical-scroll-proportion="-1.0" vertical-offset="0" max-vertical-offset="1105">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#2;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#3;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#4;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#5;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,18 +123,18 @@
         <option value="$PROJECT_DIR$/kamal1/templates/buy.html" />
         <option value="$PROJECT_DIR$/kamal1/templates/base.html" />
         <option value="$PROJECT_DIR$/kamal1/templates/login.html" />
-        <option value="$PROJECT_DIR$/app1/admin.py" />
         <option value="$PROJECT_DIR$/kamal1/settings.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/kamal1/urls.py" />
-        <option value="$PROJECT_DIR$/static/css/site_style.css" />
-        <option value="$PROJECT_DIR$/templates/game_list_snippet.html" />
         <option value="$PROJECT_DIR$/app1/forms.py" />
+        <option value="$PROJECT_DIR$/templates/game_list_snippet.html" />
         <option value="$PROJECT_DIR$/app1/views.py" />
-        <option value="$PROJECT_DIR$/templates/game_detail.html" />
-        <option value="$PROJECT_DIR$/app1/models.py" />
+        <option value="$PROJECT_DIR$/app1/admin.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/game_detail.html" />
+        <option value="$PROJECT_DIR$/static/css/site_style.css" />
+        <option value="$PROJECT_DIR$/app1/models.py" />
       </list>
     </option>
   </component>
@@ -174,7 +170,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,6 +212,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kamal1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kamal1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="kamal1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -237,6 +264,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -506,6 +534,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -541,10 +570,86 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="31" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="14" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/game_list_snippet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="42" selection-start="263" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app1/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="24" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="2040">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kamal1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="339" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app1/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app1/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="55" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="799">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#5;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="56" selection-start="852" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="935">
@@ -555,9 +660,7 @@
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="14" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="425">
-          <folding>
-            <marker date="1393086870738" expanded="true" signature="269:615" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -601,16 +704,25 @@
     <entry file="file://$PROJECT_DIR$/app1/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="612">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="45" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="578">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#5;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -631,9 +743,7 @@
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="14" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="425">
-          <folding>
-            <marker date="1393086870738" expanded="true" signature="269:615" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -677,16 +787,25 @@
     <entry file="file://$PROJECT_DIR$/app1/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="19" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="612">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="476">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#5;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -700,22 +819,26 @@
     <entry file="file://$PROJECT_DIR$/app1/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="12" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="612">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="476">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#5;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app1/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kamal1/settings.py">
@@ -725,35 +848,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/template/defaulttags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="879" column="4" selection-start="31710" selection-end="31736" vertical-scroll-proportion="0.33277592" vertical-offset="14370" max-vertical-offset="23681">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="14" selection-start="170" selection-end="170" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="425">
-          <folding>
-            <marker date="1393086870738" expanded="true" signature="269:615" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/site_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="153" selection-end="153" vertical-scroll-proportion="0.23411371" vertical-offset="64" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app1/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -764,9 +862,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/game_list_snippet.html">
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="263" selection-end="291" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="459">
+        <state line="12" column="43" selection-start="235" selection-end="270" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
@@ -778,6 +876,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.0" vertical-offset="1485" max-vertical-offset="4777">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/shortcuts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="2050" selection-end="2050" vertical-scroll-proportion="0.33333334" vertical-offset="567" max-vertical-offset="2703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/template/loader_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="0" selection-start="4386" selection-end="4386" vertical-scroll-proportion="0.33333334" vertical-offset="1774" max-vertical-offset="4488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/template/defaulttags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="0" selection-start="5668" selection-end="5668" vertical-scroll-proportion="0.33333334" vertical-offset="2131" max-vertical-offset="23681">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/template/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="0" selection-start="6810" selection-end="6810" vertical-scroll-proportion="0.33333334" vertical-offset="2607" max-vertical-offset="3230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/template/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="0" selection-start="4186" selection-end="4186" vertical-scroll-proportion="1.9300184" vertical-offset="941" max-vertical-offset="22423">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/game_list_snippet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="54" selection-start="731" selection-end="736" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/template/debug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="2835" selection-end="2835" vertical-scroll-proportion="0.0" vertical-offset="1043" max-vertical-offset="1734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app1/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="36" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app1/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="53" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1479" selection-end="1496" vertical-scroll-proportion="-12.192307" vertical-offset="346" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="36" selection-start="71" selection-end="82" vertical-scroll-proportion="-1.0" vertical-offset="0" max-vertical-offset="1105">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#5;n#div#1;n#form#0;n#div#6;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/site_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="17" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="677" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/django/utils/importlib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.7495396" vertical-offset="222" max-vertical-offset="765">
@@ -785,35 +985,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="20" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="714">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="55" selection-start="1648" selection-end="1648" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app1/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="24" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="2040">
+        <state line="142" column="19" selection-start="4622" selection-end="4626" vertical-scroll-proportion="0.42664093" vertical-offset="2193" max-vertical-offset="4114">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="31" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.5918762" vertical-offset="357" max-vertical-offset="935">
-          <folding />
         </state>
       </provider>
     </entry>

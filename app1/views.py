@@ -30,7 +30,6 @@ def game_detail(request, pk):
     context = {'game': game}
     if request.method == 'POST':
         data = request.POST
-
         game.do_move(data)
 
     html = render(request, 'game_detail.html', {'game': game})
