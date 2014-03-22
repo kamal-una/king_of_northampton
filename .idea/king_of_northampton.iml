@@ -4,7 +4,7 @@
     <facet type="django" name="Django">
       <configuration>
         <option name="rootFolder" value="$MODULE_DIR$" />
-        <option name="settingsModule" value="kamal1/settings.py" />
+        <option name="settingsModule" value="settings.py" />
         <option name="manageScript" value="manage.py" />
       </configuration>
     </facet>
@@ -19,11 +19,10 @@
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
-    <option name="TEMPLATE_FOLDERS">
-      <list>
-        <option value="C:\django\testenv\templates" />
-      </list>
-    </option>
+  </component>
+  <component name="TestRunnerService">
+    <option name="projectConfiguration" value="Unittests" />
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
   </component>
 </module>
 

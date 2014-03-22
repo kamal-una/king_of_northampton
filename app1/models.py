@@ -57,6 +57,7 @@ class Game(models.Model):
     def do_move(self, data):
         last_move = self.move_set.last()
         new_move = self.create_move()
+        new_move.player = self.next_to_move
         if last_move:
             new_move.roll = last_move.roll + 1
             if new_move.roll <= 3:
@@ -201,10 +202,10 @@ class Game(models.Model):
 
         show_moves = self.move_set.filter(roll=3)
         for move in show_moves:
-            game.append([move.dice_1, move.dice_2, move.dice_3, move.dice_4, move.dice_5, move.dice_6])
+            game.append([move.dice_1, move.dice_2, move.dice_3, move.dice_4, move.dice_5, move.dice_6, move.player])
 
         last_move = self.move_set.last()
-        game.append([last_move.dice_1, last_move.dice_2, last_move.dice_3, last_move.dice_4, last_move.dice_5, last_move.dice_6])
+        game.append([last_move.dice_1, last_move.dice_2, last_move.dice_3, last_move.dice_4, last_move.dice_5, last_move.dice_6, last_move.player])
         return game
 
     def get_absolute_url(self):
@@ -215,6 +216,7 @@ class Game(models.Model):
 
 class Move(models.Model):
     game = models.ForeignKey(Game)
+    player = models.ForeignKey(User, related_name='move_player')
     turn = models.IntegerField()
     roll = models.IntegerField()
     dice_1 = models.CharField(max_length=1, choices=DICE_CHOICES)
@@ -224,11 +226,6 @@ class Move(models.Model):
     dice_5 = models.CharField(max_length=1, choices=DICE_CHOICES)
     dice_6 = models.CharField(max_length=1, choices=DICE_CHOICES)
     comment = models.CharField(max_length=300)
-
-    def make_move(self, game, data):
-        if data['hold1'] == True:
-            print "hold1"
-        return Move(game=self)
 
     def __unicode__(self):
         return "Game %s, Turn %s" % (self.game, self.turn)
