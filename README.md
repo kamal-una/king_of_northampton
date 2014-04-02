@@ -2,7 +2,7 @@ king_of_northampton
 ===================
 An experimental project of a dice based game wirtten in Django. Loosely based on the board game 'King of Tokyo'.
 
-Each turn consists of 3 rolls of the 6 die. After each roll you can choose which die you want to hold sa the same value.
+Each turn consists of 3 rolls of the 6 die. After each roll you can choose which die you want to hold.
 
 The dice are five sided with the following faces:
 Attack
