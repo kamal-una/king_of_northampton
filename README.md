@@ -4,12 +4,7 @@ An experimental project of a dice based game wirtten in Django. Loosely based on
 
 Each turn consists of 3 rolls of the 6 die. After each roll you can choose which die you want to hold.
 
-The dice are five sided with the following faces:
-Attack
-Heart
-1
-2
-3
+The dice are five sided with the following faces: Attack, Heart, 1, 2, 3
 
 Get three of the same numbers (eiither 1, 2 or 3) to earn that number of victory points. Get 1 extra point for each addition dice of the same face.
 
