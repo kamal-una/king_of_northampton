@@ -30,6 +30,7 @@
             <li class="active"><a href="">{{ user.username|title }}</a></li>
             <li><a href="{% url 'logout' %}">Sign out</a></li>
         {% else %}
+            <li><a href="{% url 'signup' %}">Register</a></li>
             <li><a href="{% url 'login' %}">Sign in</a></li>
         {% endif %}
           </ul>

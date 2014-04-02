@@ -10,10 +10,27 @@
 
 {% block content %}
     {% if user.is_authenticated %}
-        <div class="well col-lg-10 center">
+        <div class="well col-sm-6 center">
             {% include "game_list_snippet.html" with header="Games waiting for your move" games_list=waiting_games %}
             {% include "game_list_snippet.html" with header="Other active games" games_list=other_games %}
             {% include "game_list_snippet.html" with header="Finished games" games_list=finished_games %}
         </div>
+
+        <div class="well col-sm-6 center">
+            {% if invitations %}
+                <h3 class="panel-header">Open invitations</h3>
+                <div class="list-group" >
+                    {% for inv in invitations %}
+                        <a class="list-group-item" href="{% url 'accept_invitation' pk=inv.id %}">
+                            {{ inv.from_user.username }} has invited you to a game. Click here.
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <div class="text-center">
+                <a class="btn btn-primary" href="{% url 'invite' %}">Invite another user to play a game</a>
+            </div>
+        </div>
+
     {% endif %}
 {% endblock %}

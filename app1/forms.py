@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from .models import Move
+from .models import Move, Invitation
 from django.core.exceptions import ValidationError
 
 class MoveForm(ModelForm):
@@ -18,3 +18,9 @@ class MoveForm(ModelForm):
         if not game or not game.status == "A" or not game.is_empty(hold1, hold2, hold3, hold4, hold5, hold6):
             raise ValidationError("Illegal move")
         return self.cleaned_data
+
+
+class InvitationForm(ModelForm):
+    class Meta:
+        model = Invitation
+        exclude = ['from_user']

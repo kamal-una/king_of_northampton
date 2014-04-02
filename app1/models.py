@@ -25,6 +25,12 @@ class GamesManager(models.Manager):
             Q(first_player_id=user.id) | Q(second_player_id=user.id))
         return games
 
+    def new_game(self, invitation):
+        game = Game(first_player=invitation.to_user,
+                    second_player=invitation.from_user,
+                    next_to_move=invitation.to_user)
+        return game
+
 class Game(models.Model):
     first_player = models.ForeignKey(User, related_name='game_first_player')
     second_player = models.ForeignKey(User, related_name='game_second_player')
@@ -230,3 +236,12 @@ class Move(models.Model):
     def __unicode__(self):
         return "Game %s, Turn %s" % (self.game, self.turn)
 
+
+class Invitation(models.Model):
+    from_user = models.ForeignKey(User, related_name="invitations_sent")
+    to_user = models.ForeignKey(User, related_name="invitations_received",
+                                verbose_name="User to invite",
+                                help_text="Please select the user you want to play a game with")
+    message = models.CharField("Optional Message", max_length=300, blank=True,
+                               help_text="Add a message to your invite")
+    timestamp = models.DateTimeField(auto_now_add=True)
