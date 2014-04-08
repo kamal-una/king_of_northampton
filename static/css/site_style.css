@@ -50,7 +50,6 @@ input.btn:hover {
     min-height: 60px;
     color: #000000;
     font-size: 20px;
-    box-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
 }
 
 @media only screen and (max-width: 768px) {
@@ -92,5 +91,9 @@ input.btn:hover {
 }
 
 body {
-    background: url('/static/background_body.jpg') repeat
+    background: url('/static/background_body.jpg') center
+}
+
+.navbar, .bg, .well {
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
 }

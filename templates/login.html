@@ -7,7 +7,7 @@
         <p class="text-warning">Your username and password didn't match.</p>
     {% endif %}
     {% load crispy_forms_tags %}
-    <div class="well col-sm-6 center">
+    <div class="well col-sm-4 center">
         <form role="form" class="form-signin" method="post" action="{% url 'login' %}">
             {% csrf_token %}
             {{ form|crispy }}
