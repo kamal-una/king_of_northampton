@@ -11,9 +11,21 @@
 {% block content %}
     {% if user.is_authenticated %}
         <div class="well col-sm-6 center">
-            {% include "game_list_snippet.html" with header="Games waiting for your move" games_list=waiting_games %}
-            {% include "game_list_snippet.html" with header="Other active games" games_list=other_games %}
-            {% include "game_list_snippet.html" with header="Finished games" games_list=finished_games %}
+        	<h3 class="panel-header">Games waiting for your move</h3>
+        	<div class="list-group" >
+				{% include "game_list_snippet.html" with games_list=first_waiting_games %}
+				{% include "game_list_snippet.html" with games_list=second_waiting_games %}
+            </div>
+            <h3 class="panel-header">Other active games</h3>
+            <div class="list-group" >
+				{% include "game_list_snippet.html" with games_list=first_other_games %}
+				{% include "game_list_snippet.html" with games_list=second_other_games %}
+			</div>
+            <h3 class="panel-header">Finished games</h3>
+            <div class="list-group" >
+				{% include "game_list_snippet.html" with games_list=first_finished_games %}
+				{% include "game_list_snippet.html" with games_list=second_finished_games %}
+			</div>
         </div>
 
         <div class="well col-sm-6 center">

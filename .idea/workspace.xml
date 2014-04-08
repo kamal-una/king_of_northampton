@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d6678fe-a7d6-4b9b-b117-8fa1cf7afd35" name="Default" comment="" />
-    <ignored path="king_of_northampton.iws" />
+    <list default="true" id="8076eb9b-fdf7-4d15-bb2e-67a8e06cabe7" name="Default" comment="" />
+    <ignored path="kon.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,14 +19,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="king_of_northampton" />
+    <favorites_list name="kon" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app1/models.py">
+        <entry file="file://$PROJECT_DIR$/game/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="179" column="29" selection-start="5980" selection-end="5982" vertical-scroll-proportion="-8.08" vertical-offset="2841" max-vertical-offset="4301">
+            <state line="210" column="0" selection-start="6954" selection-end="6954" vertical-scroll-proportion="0.0" vertical-offset="3249" max-vertical-offset="4573">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -34,19 +34,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="30" selection-start="347" selection-end="347" vertical-scroll-proportion="0.02643857" vertical-offset="102" max-vertical-offset="952">
+            <state line="14" column="20" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kamal1/urls.py">
+      <file leaf-file-name="manage.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="50" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game_detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="18" selection-start="5260" selection-end="5260" vertical-scroll-proportion="-60.153847" vertical-offset="0" max-vertical-offset="1819">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="33" selection-start="60" selection-end="60" vertical-scroll-proportion="0.034274194" vertical-offset="0" max-vertical-offset="992">
               <folding />
             </state>
           </provider>
@@ -55,41 +73,44 @@
       <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="40" selection-start="657" selection-end="657" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="714">
+            <state line="12" column="8" selection-start="235" selection-end="269" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app1/views.py">
+        <entry file="file://$PROJECT_DIR$/game/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="53" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="1411">
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
+            <state line="17" column="77" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app1/forms.py">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
+            <state line="4" column="89" selection-start="164" selection-end="164" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site_style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/site_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="11" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1717">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app1/admin.py">
+        <entry file="file://$PROJECT_DIR$/game/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="47" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state line="19" column="0" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,28 +122,18 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitLogSettings">
-    <option name="myDateState">
-      <MyDateState />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/game_detail.html" />
-        <option value="$PROJECT_DIR$/app1/forms.py" />
-        <option value="$PROJECT_DIR$/app1/admin.py" />
-        <option value="$PROJECT_DIR$/app1/views.py" />
-        <option value="$PROJECT_DIR$/templates/new_invitation.html" />
-        <option value="$PROJECT_DIR$/templates/accept_invitation.html" />
-        <option value="$PROJECT_DIR$/app1/models.py" />
-        <option value="$PROJECT_DIR$/kamal1/urls.py" />
-        <option value="$PROJECT_DIR$/templates/signup.html" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
+        <option value="$PROJECT_DIR$/kon/urls.py" />
+        <option value="$PROJECT_DIR$/app.yaml" />
+        <option value="$PROJECT_DIR$/kon/settings.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/css/site_style.css" />
+        <option value="$PROJECT_DIR$/game/models.py" />
+        <option value="$PROJECT_DIR$/templates/game_detail.html" />
+        <option value="$PROJECT_DIR$/game/views.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
       </list>
     </option>
   </component>
@@ -163,27 +174,27 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemId" value="kon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemId" value="kon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemId" value="kon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemId" value="kon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemId" value="kon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -193,29 +204,61 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemId" value="kon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemId" value="kon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kamal1" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemId" value="kon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="king_of_northampton" />
+              <option name="myItemId" value="kon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app1" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -224,47 +267,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pvyproject" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="C:/django" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings />
-    </option>
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Kamal\Documents\GitHub\king_of_northampton\templates" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Django server.king_of_northampton">
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="king_of_northampton" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
+  <component name="RunManager" selected="App Engine server.kon">
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -273,59 +282,12 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="king_of_northampton" />
+      <module name="kon" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="king_of_northampton" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="king_of_northampton" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="127.0.0.1" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
@@ -339,7 +301,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="king_of_northampton" />
+      <module name="kon" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -351,73 +313,7 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="king_of_northampton" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="king_of_northampton" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="king_of_northampton" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="king_of_northampton" type="Python.DjangoServer" factoryName="Django server">
+    <configuration default="false" name="kon" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -428,7 +324,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="king_of_northampton" />
+      <module name="kon" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -438,37 +334,36 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Django server.king_of_northampton" />
+    <configuration default="false" name="kon" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="127.0.0.1" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Django server.kon" />
+      <item index="1" class="java.lang.String" itemvalue="App Engine server.kon" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0d6678fe-a7d6-4b9b-b117-8fa1cf7afd35" name="Default" comment="" />
-      <created>1395428690259</created>
-      <updated>1395428690259</updated>
+      <changelist id="8076eb9b-fdf7-4d15-bb2e-67a8e06cabe7" name="Default" comment="" />
+      <created>1396465484020</created>
+      <updated>1396465484020</updated>
     </task>
     <servers />
   </component>
@@ -481,11 +376,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19542067" sideWeight="0.66566867" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27902022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3342912" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -513,9 +408,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app1/models.py">
+    <entry file="file://$PROJECT_DIR$/kon/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="40" selection-start="6818" selection-end="6818" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4046">
+        <state line="21" column="47" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="22" selection-start="6946" selection-end="6946" vertical-scroll-proportion="0.0" vertical-offset="2006" max-vertical-offset="4522">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -524,46 +426,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1683">
+        <state line="81" column="29" selection-start="4410" selection-end="4410" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="1683">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kamal1/settings.py">
+    <entry file="file://$PROJECT_DIR$/game/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="36" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="2040">
+        <state line="19" column="0" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kamal1/urls.py">
+    <entry file="file://$PROJECT_DIR$/kon/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425">
+        <state line="129" column="11" selection-start="4512" selection-end="4512" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2992">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/views.py">
+    <entry file="file://$PROJECT_DIR$/game/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="39" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="680">
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state line="41" column="0" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1547">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/admin.py">
+    <entry file="file://$PROJECT_DIR$/kon/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="340">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state line="21" column="47" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="476">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/models.py">
+    <entry file="file://$PROJECT_DIR$/game/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="40" selection-start="6818" selection-end="6818" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4046">
+        <state line="167" column="24" selection-start="5554" selection-end="5554" vertical-scroll-proportion="0.0" vertical-offset="2754" max-vertical-offset="4420">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -572,147 +470,311 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1683">
+        <state line="81" column="29" selection-start="4410" selection-end="4410" vertical-scroll-proportion="0.0" vertical-offset="536" max-vertical-offset="1683">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kamal1/settings.py">
+    <entry file="file://$PROJECT_DIR$/game/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="36" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="2040">
+        <state line="19" column="0" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kamal1/urls.py">
+    <entry file="file://$PROJECT_DIR$/kon/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425">
+        <state line="129" column="11" selection-start="4512" selection-end="4512" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2992">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/views.py">
+    <entry file="file://$PROJECT_DIR$/game/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="39" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="680">
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state line="41" column="0" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1547">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/admin.py">
+    <entry file="file://$PROJECT_DIR$/kon/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="340">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state line="21" column="47" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="476">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/models.py">
+    <entry file="file://$PROJECT_DIR$/game/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="0" selection-start="7667" selection-end="7667" vertical-scroll-proportion="0.0" vertical-offset="2651" max-vertical-offset="4012">
+        <state line="167" column="24" selection-start="5554" selection-end="5554" vertical-scroll-proportion="0.0" vertical-offset="2337" max-vertical-offset="4420">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kamal1/settings.py">
+    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="36" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="2040">
+        <state line="81" column="29" selection-start="4410" selection-end="4410" vertical-scroll-proportion="0.0" vertical-offset="536" max-vertical-offset="1683">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/admin.py">
+    <entry file="file://$PROJECT_DIR$/game/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app1/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="53" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="1411">
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app1/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kamal1/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="50" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+        <state line="19" column="0" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/accept_invitation.html">
+    <entry file="file://$PROJECT_DIR$/kon/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="35" selection-start="567" selection-end="567" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="510">
+        <state line="129" column="11" selection-start="4512" selection-end="4512" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2992">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kon/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="47" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="2753" selection-end="2753" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="4369">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="22" selection-start="4840" selection-end="4840" vertical-scroll-proportion="2.1679628" vertical-offset="0" max-vertical-offset="1683">
+        <state line="81" column="29" selection-start="4410" selection-end="4410" vertical-scroll-proportion="0.0" vertical-offset="536" max-vertical-offset="1683">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/game_list_snippet.html">
+    <entry file="file://$PROJECT_DIR$/game/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="669">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/new_invitation.html">
+    <entry file="file://$PROJECT_DIR$/kon/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="168" selection-end="168" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="391">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="2975">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/signup.html">
+    <entry file="file://$PROJECT_DIR$/game/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="184" selection-end="184" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="510">
+        <state line="41" column="0" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kon/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="47" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="2753" selection-end="2753" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="4369">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="29" selection-start="4410" selection-end="4410" vertical-scroll-proportion="0.0" vertical-offset="536" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kon/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="2975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kon/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="47" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="64" selection-start="7483" selection-end="7483" vertical-scroll-proportion="0.0" vertical-offset="3672" max-vertical-offset="4505">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="35" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="21" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="64" selection-start="7483" selection-end="7483" vertical-scroll-proportion="0.0" vertical-offset="3434" max-vertical-offset="4505">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="35" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="21" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kon/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="47" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1018">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1018">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.35068762" vertical-offset="357" max-vertical-offset="2720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kon/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="5" selection-start="4211" selection-end="4211" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2992">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="89" selection-start="164" selection-end="164" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/site_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="11" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="0" selection-start="6954" selection-end="6954" vertical-scroll-proportion="0.0" vertical-offset="3249" max-vertical-offset="4573">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="18" selection-start="5260" selection-end="5260" vertical-scroll-proportion="-60.153847" vertical-offset="0" max-vertical-offset="1819">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="657" selection-end="657" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="714">
+        <state line="12" column="8" selection-start="235" selection-end="269" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="918">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app1/models.py">
+    <entry file="file://$PROJECT_DIR$/game/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="29" selection-start="5980" selection-end="5982" vertical-scroll-proportion="-8.08" vertical-offset="2841" max-vertical-offset="4301">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state line="17" column="77" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="347" selection-end="347" vertical-scroll-proportion="0.02643857" vertical-offset="102" max-vertical-offset="952">
+        <state line="2" column="33" selection-start="60" selection-end="60" vertical-scroll-proportion="0.034274194" vertical-offset="0" max-vertical-offset="992">
           <folding />
         </state>
       </provider>

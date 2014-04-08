@@ -1,16 +1,19 @@
 {% extends "base.html" %}
 
-{% block p_lead %}This is the login page{% endblock %}
+{% block p_lead %}Log in to play!{% endblock %}
 
 {% block content %}
     {% if form.erros %}
         <p class="text-warning">Your username and password didn't match.</p>
     {% endif %}
     {% load crispy_forms_tags %}
-	<form role="form" class="form-signin" method="post" action="{% url 'login' %}">
-	    {% csrf_token %}
-	    {{ form|crispy }}
-	    <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign in" />
-	    <input type="hidden" name="next" value="{{ next }}" />
-	</form>
+    <div class="well col-sm-6 center">
+        <form role="form" class="form-signin" method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign in" />
+            <a href="{% url 'signup' %}" class="btn btn btn-lg btn-block btn-success">Register</a>
+            <input type="hidden" name="next" value="{{ next }}" />
+        </form>
+    </div>
 {% endblock %}
