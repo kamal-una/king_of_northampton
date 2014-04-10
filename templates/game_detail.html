@@ -38,23 +38,23 @@
                     {% else %}
                         <p class="text-center">Your last move</p>
                     {% endif %}
-                    <div class="col-xs-2"><div class="well dice">{% if move.0 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.0 }}{% endif %}</div></div>
-                    <div class="col-xs-2"><div class="well dice">{% if move.1 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.1 }}{% endif %}</div></div>
-                    <div class="col-xs-2"><div class="well dice">{% if move.2 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.2 }}{% endif %}</div></div>
-                    <div class="col-xs-2"><div class="well dice">{% if move.3 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.3 }}{% endif %}</div></div>
-                    <div class="col-xs-2"><div class="well dice">{% if move.4 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.4 }}{% endif %}</div></div>
-                    <div class="col-xs-2"><div class="well dice">{% if move.5 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.5 }}{% endif %}</div></div>
+                    <div class="col-xs-2"><div {% if forloop.last %}id='dice1'{%  endif %} class="well dice">{% if move.0 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.0 }}{% endif %}</div></div>
+                    <div class="col-xs-2"><div {% if forloop.last %}id='dice2'{%  endif %} class="well dice">{% if move.1 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.1 }}{% endif %}</div></div>
+                    <div class="col-xs-2"><div {% if forloop.last %}id='dice3'{%  endif %} class="well dice">{% if move.2 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.2 }}{% endif %}</div></div>
+                    <div class="col-xs-2"><div {% if forloop.last %}id='dice4'{%  endif %} class="well dice">{% if move.3 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.3 }}{% endif %}</div></div>
+                    <div class="col-xs-2"><div {% if forloop.last %}id='dice5'{%  endif %} class="well dice">{% if move.4 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.4 }}{% endif %}</div></div>
+                    <div class="col-xs-2"><div {% if forloop.last %}id='dice6'{%  endif %} class="well dice">{% if move.5 == 'H' %}<i class="fa fa-heart"></i>{% else %}{{ move.5 }}{% endif %}</div></div>
                 </div>
             {% endif %}
         {% endfor %}
         {% if game.next_to_move == user and game.status == "A" %}
             <div class="row center checkbox-row">
-                <div class="col-xs-2"><input type="checkbox" name="hold1" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input type="checkbox" name="hold2" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input type="checkbox" name="hold3" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input type="checkbox" name="hold4" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input type="checkbox" name="hold5" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input type="checkbox" name="hold6" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input id='dice1check' type="checkbox" name="hold1" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input id='dice2check' type="checkbox" name="hold2" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input id='dice3check' type="checkbox" name="hold3" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input id='dice4check' type="checkbox" name="hold4" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input id='dice5check' type="checkbox" name="hold5" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                <div class="col-xs-2"><input id='dice6check' type="checkbox" name="hold6" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
             </div>
             <div class="col-xs-12 center text-center">
                 {% if last_move_roll == 1 %}
@@ -72,7 +72,7 @@
                 <div class="alert alert-success">
                   <button type="button" class="close" data-dismiss="alert">&times;</button>
                   <h4>It's your go!</h4>
-                  Hold the dice you want and click roll.
+                  Click the dice you want to hold and then click roll.
                 </div>
             {% else %}
                 <div class="alert alert-info">
@@ -98,4 +98,13 @@
             </div>
         {% endif %}
     </div>
+    <script>
+        $(".checkbox-row").hide();
+        $('.dice').click(function() {
+            var dice_id = $(this).attr('id');
+            var checkbox = "#".concat(dice_id.concat("check"));
+            $(checkbox).prop("checked", !$(checkbox).prop("checked"));
+            $("#".concat(dice_id)).toggleClass("hold");
+        });
+    </script>
 {% endblock %}
