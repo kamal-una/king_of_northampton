@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_detail.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game_detail.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="59" selection-start="4764" selection-end="4764" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1972">
+            <state line="74" column="59" selection-start="4764" selection-end="4764" vertical-scroll-proportion="1.282365" vertical-offset="0" max-vertical-offset="1972">
               <folding />
             </state>
           </provider>
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="13" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.8631791" vertical-offset="179" max-vertical-offset="1173">
+            <state line="8" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
@@ -590,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="59" selection-start="4764" selection-end="4764" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/site_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="25" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="812" max-vertical-offset="1853">
@@ -606,7 +599,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="13" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.8631791" vertical-offset="179" max-vertical-offset="1173">
+        <state line="8" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/game_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="59" selection-start="4764" selection-end="4764" vertical-scroll-proportion="1.282365" vertical-offset="0" max-vertical-offset="1972">
           <folding />
         </state>
       </provider>
