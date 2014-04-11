@@ -60,11 +60,21 @@ class Game(models.Model):
     def create_move(self):
         return Move(game=self)
 
-    def do_move(self, data):
+    def my_move(self, user):
+        if self.next_to_move == user:
+            return True
+        else:
+            return False
+
+    def get_last_move(self):
         try:
-            last_move = self.move_set.all()[:1].get()
+            return self.move_set.order_by('-turn','-roll')[:1].get()
         except:
-            last_move = None
+            return None
+
+
+    def do_move(self, data):
+        last_move = self.get_last_move()
 
         new_move = self.create_move()
         new_move.player = self.next_to_move
@@ -117,6 +127,8 @@ class Game(models.Model):
             if new_move.roll == 3:
                 self.toggle_next_player()
                 self.status = self.get_status()
+
+        return new_move
 
     def toggle_next_player(self):
         if self.next_to_move == self.first_player:
@@ -208,24 +220,33 @@ class Game(models.Model):
 
     def as_game(self):
         game_moves = []
+        last_move = self.get_last_move()
 
-        moves = self.move_set.all()
-        if (moves.count() == 0) or (moves.count() % 3 == 0):
-            # make a first roll, or do the first roll of the new player
-            self.do_move('')
+        # make a first roll of game, or next players first roll
+        if not last_move or last_move.roll == 3: 
+            last_move = self.do_move('')
 
         try:
             show_move = self.move_set.filter(roll=3).order_by('-turn')[:1].get()
         except:
             show_move = None
-        if show_move:
-            game_moves.append([show_move.dice_1, show_move.dice_2, show_move.dice_3, show_move.dice_4, show_move.dice_5, show_move.dice_6, show_move.player])
 
-        last_move = self.move_set.all()[:1].get()
+        if show_move:
+            self.append_move(game_moves, show_move)
+
         if last_move:
-            game_moves.append([last_move.dice_1, last_move.dice_2, last_move.dice_3, last_move.dice_4, last_move.dice_5, last_move.dice_6, last_move.player])
+            self.append_move(game_moves, last_move)
 
         return game_moves, last_move.roll
+
+    def append_move(self, moves_list, move_to_append):
+        moves_list.append([move_to_append.dice_1, 
+                           move_to_append.dice_2, 
+                           move_to_append.dice_3, 
+                           move_to_append.dice_4, 
+                           move_to_append.dice_5, 
+                           move_to_append.dice_6, 
+                           move_to_append.player])
 
     def get_absolute_url(self):
         return reverse('game_detail', args=[self.id])

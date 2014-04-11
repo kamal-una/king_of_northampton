@@ -47,22 +47,29 @@
                 </div>
             {% endif %}
         {% endfor %}
-        {% if game.next_to_move == user and game.status == "A" %}
-            <div class="row center checkbox-row">
-                <div class="col-xs-2"><input id='dice1check' type="checkbox" name="hold1" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input id='dice2check' type="checkbox" name="hold2" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input id='dice3check' type="checkbox" name="hold3" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input id='dice4check' type="checkbox" name="hold4" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input id='dice5check' type="checkbox" name="hold5" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-                <div class="col-xs-2"><input id='dice6check' type="checkbox" name="hold6" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
-            </div>
-            <div class="col-xs-12 center text-center">
-                {% if last_move_roll == 1 %}
-                    <button class="btn btn-primary">Next Roll!</button>
-                {% elif last_move_roll == 2 %}
-                    <button class="btn btn-primary">Final Roll!</button>
-                {% endif %}
-            </div>
+        {% if game.status == "A" %}
+            {% if game.next_to_move == user %}
+                <div class="row center checkbox-row">
+                    <div class="col-xs-2"><input id='dice1check' type="checkbox" name="hold1" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                    <div class="col-xs-2"><input id='dice2check' type="checkbox" name="hold2" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                    <div class="col-xs-2"><input id='dice3check' type="checkbox" name="hold3" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                    <div class="col-xs-2"><input id='dice4check' type="checkbox" name="hold4" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                    <div class="col-xs-2"><input id='dice5check' type="checkbox" name="hold5" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                    <div class="col-xs-2"><input id='dice6check' type="checkbox" name="hold6" class="checkbox" style="margin-left:auto; margin-right:auto;"></div>
+                </div>
+                <div class="col-xs-12 center text-center">
+                    {% if last_move_roll == 1 %}
+                        <button class="btn btn-primary">Next Roll!</button>
+                    {% elif last_move_roll == 2 %}
+                        <button class="btn btn-primary">Final Roll!</button>
+                    {% endif %}
+                </div>
+            {% else %}
+                <div class='text-center'>
+                    <p>Waiting for other player...</p>
+                    <p>The page will load automatically when it's your turn.</p>
+                </div>
+            {% endif %}
         {% endif %}
         </form>
     </div>
@@ -78,8 +85,29 @@
                 <div class="alert alert-info">
                   <button type="button" class="close" data-dismiss="alert">&times;</button>
                   <h4>It's not your go yet.</h4>
-                  Wait for your opponent to play their turn.
+                  Wait for your opponent to play their turn...
                 </div>
+                <script>
+                    function ajax_request() {
+                      var url = $(location).attr('href');
+                      var game_id = url.split("/")[4]
+                      var ajax_url = "/mymove/".concat(game_id)
+                      $.ajax({
+                        url: ajax_url,
+                        error: function(aj_data) {
+                        },
+                        success: function(aj_data) {
+                          if (aj_data.mymove == 'true') {
+                            location.reload();
+                          } else {
+                            setTimeout(function() { ajax_request(); }, 5000);
+                          }
+                        },
+                        contentType: 'application/json'
+                      });
+                    }
+                    ajax_request();
+                </script>
             {% endif %}
         {% elif game.status == "F" and user == game.first_player %}
             <div class="alert alert-success">

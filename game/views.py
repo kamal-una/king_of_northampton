@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
 from .models import Invitation, Game
 from .forms import InvitationForm
+import json
 
 
 def home(request):
@@ -39,15 +40,37 @@ def home(request):
 
 def game_detail(request, pk):
     game = get_object_or_404(Game, pk=pk)
+    read_move_from_datastore = True
 
     if request.method == 'POST':
         data = request.POST
-        game.do_move(data)
+        last_move = game.do_move(data)
 
-    game_moves, last_move_roll = game.as_game()
+        # the datastore doesn't always come back with out latest move!
+        # getting the last_move back from do_move means that we don't need to go to the datastore
+        if last_move.roll < 3:
+            game_moves = []
+            game.append_move(game_moves, last_move)
+            last_move_roll = last_move.roll
+            read_move_from_datastore = False
+
+    if read_move_from_datastore:
+        game_moves, last_move_roll = game.as_game()
 
     html = render(request, 'game_detail.html', {'game': game, 'game_moves': game_moves, 'last_move_roll': last_move_roll})
     return HttpResponse(html)
+
+
+def my_move(request, pk):
+    game = get_object_or_404(Game, pk=pk)
+    response_data = {}
+
+    if game.my_move(request.user):
+        response_data['mymove'] = 'true'
+    else:
+        response_data['mymove'] = 'false'
+
+    return HttpResponse(json.dumps(response_data), content_type="application/json")
 
 
 class SignUpView(CreateView):
