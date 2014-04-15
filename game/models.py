@@ -72,7 +72,6 @@ class Game(models.Model):
         except:
             return None
 
-
     def do_move(self, data):
         last_move = self.get_last_move()
 
@@ -126,7 +125,8 @@ class Game(models.Model):
             new_move.save()
             if new_move.roll == 3:
                 self.toggle_next_player()
-                self.status = self.get_status()
+                # we pass the last_move, so we don't rely on getting it from the datastore
+                self.status = self.get_status(new_move)
 
         return new_move
 
@@ -136,59 +136,64 @@ class Game(models.Model):
         else:
             self.next_to_move = self.first_player
 
-    def get_status(self):
-        # a whole move has been made, check the scores...
+    def get_status(self, last_move):
+        # a whole move has been made, go through each move to check the scores...
         final_rolls = self.move_set.filter(roll=3).order_by('turn')
-        player1_points = 0
-        player1_health = 10
-        player2_points = 0
-        player2_health = 10
+        self.first_player_points = 0
+        self.first_player_health = 10
+        self.second_player_points = 0
+        self.second_player_health = 10
 
         for roll in final_rolls:
-            hearts = self.count_dice(roll, 'H')
-            attacks = self.count_dice(roll, 'A')
-            point_1 = self.count_dice(roll, '1')
-            point_2 = self.count_dice(roll, '2')
-            point_3 = self.count_dice(roll, '3')
+            # if we do get the last_move from the datastore, ignore it...
+            if roll.turn != last_move.turn:
+                self.process_turn(roll)
 
-            points = 0
-            points += self.count_points(point_1, '1')
-            points += self.count_points(point_2, '2')
-            points += self.count_points(point_3, '3')
-
-            #if roll.player == self.first_player:
-            # this will allow you to play against yourself
-            if roll.turn % 2 != 0:
-                # player 1's turn
-                player1_points += points
-                player1_health += hearts
-                player2_health -= attacks
-            else:
-                # player 2
-                player2_points += points
-                player2_health += hearts
-                player1_health -= attacks
-
-            # you can't get more than 10 health
-            if player1_health > 10:
-                player1_health = 10
-            if player2_health > 10:
-                player2_health = 10
+        # now process the last move from memory
+        self.process_turn(last_move)
 
         # end game conditions
-        if player1_points >= 20 or player2_health <= 0:
-            status = "F"
-        elif player2_points >= 20 or player1_health <= 0:
-            status = "S"
+        if self.first_player_points >= 20 or self.second_player_health <= 0:
+            self.status = "F"
+        elif self.second_player_points >= 20 or self.first_player_health <= 0:
+            self.status = "S"
         else:
-            status = "A"
-        self.first_player_health = player1_health
-        self.second_player_health = player2_health
-        self.first_player_points = player1_points
-        self.second_player_points = player2_points
-        self.status = status
+            self.status = "A"
+
         self.save()
-        return status
+        
+        return self.status
+
+    def process_turn(self, roll):
+        hearts = self.count_dice(roll, 'H')
+        attacks = self.count_dice(roll, 'A')
+        point_1 = self.count_dice(roll, '1')
+        point_2 = self.count_dice(roll, '2')
+        point_3 = self.count_dice(roll, '3')
+
+        points = 0
+        points += self.count_points(point_1, '1')
+        points += self.count_points(point_2, '2')
+        points += self.count_points(point_3, '3')
+
+        #if roll.player == self.first_player:
+        # this will allow you to play against yourself
+        if roll.turn % 2 != 0:
+            # player 1's turn
+            self.first_player_points += points
+            self.first_player_health += hearts
+            self.second_player_health -= attacks
+        else:
+            # player 2
+            self.second_player_points += points
+            self.second_player_health += hearts
+            self.first_player_health -= attacks
+
+        # you can't get more than 10 health
+        if self.first_player_health > 10:
+            self.first_player_health = 10
+        if self.second_player_health > 10:
+            self.second_player_health = 10
 
     def count_points(self, dice_count, dice_face):
         points = 0
@@ -240,7 +245,7 @@ class Game(models.Model):
         return game_moves, last_move.roll
 
     def append_move(self, moves_list, move_to_append):
-        moves_list.append([move_to_append.dice_1, 
+        moves_list.append([move_to_append.dice_1,
                            move_to_append.dice_2, 
                            move_to_append.dice_3, 
                            move_to_append.dice_4, 
