@@ -4,7 +4,6 @@ from django.shortcuts import get_object_or_404
 from django.views.generic import CreateView
 from django.contrib.auth.forms import UserCreationForm
 from django.core.urlresolvers import reverse_lazy
-from .models import Game, Move
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
 from .models import Invitation, Game
@@ -23,11 +22,15 @@ def home(request):
         second_waiting_games = second_games.filter(next_to_move=request.user, status='A')
         second_other_games = second_games.exclude(next_to_move=request.user).filter(status='A')
         second_finished_games = second_games.exclude(status='A')
+
+        waiting_games = list(first_other_games) + list(second_other_games)
+        other_games = list(first_waiting_games) + list(second_waiting_games)
+        finished_games = list(first_finished_games) + list(second_finished_games)
         
         invitations = request.user.invitations_received.all()
-        context = {'other_games': list(first_other_games) + list(second_other_games),
-                   'waiting_games': list(first_waiting_games) + list(second_waiting_games),
-                   'finished_games': list(first_finished_games) + list(second_finished_games),
+        context = {'other_games': waiting_games,
+                   'waiting_games': other_games,
+                   'finished_games': finished_games,
                    'invitations': invitations}
     else:
         return redirect('login')
@@ -54,7 +57,11 @@ def game_detail(request, pk):
     if read_move_from_datastore:
         game_moves, last_move_roll = game.as_game()
 
-    html = render(request, 'game_detail.html', {'game': game, 'game_moves': game_moves, 'last_move_roll': last_move_roll})
+    context = {'game': game,
+               'game_moves': game_moves,
+               'last_move_roll': last_move_roll}
+
+    html = render(request, 'game_detail.html', context)
     return HttpResponse(html)
 
 
