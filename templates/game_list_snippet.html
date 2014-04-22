@@ -12,4 +12,6 @@
 			You lost!
 		{% endif %}
 		<span class="badge">{{ game.move_set.count }}</span></a>
+{% empty %}
+	<p class="list-group-item">{{ none }}</p>
 {% endfor %}

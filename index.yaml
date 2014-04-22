@@ -47,6 +47,19 @@ indexes:
 - kind: game_game
   properties:
   - name: first_player_id
+  - name: second_player_id
+  - name: status
+
+- kind: game_game
+  properties:
+  - name: first_player_id
+  - name: second_player_id
+  - name: status
+  - name: next_to_move_id
+
+- kind: game_game
+  properties:
+  - name: first_player_id
   - name: status
 
 - kind: game_game

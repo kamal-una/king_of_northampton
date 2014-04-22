@@ -13,18 +13,15 @@
         <div class="well col-sm-6 center">
         	<h3 class="panel-header">Games waiting for your move</h3>
         	<div class="list-group" >
-				{% include "game_list_snippet.html" with games_list=first_waiting_games %}
-				{% include "game_list_snippet.html" with games_list=second_waiting_games %}
+				{% include "game_list_snippet.html" with games_list=waiting_games none="No games waiting for your move" %}
             </div>
             <h3 class="panel-header">Other active games</h3>
             <div class="list-group" >
-				{% include "game_list_snippet.html" with games_list=first_other_games %}
-				{% include "game_list_snippet.html" with games_list=second_other_games %}
+				{% include "game_list_snippet.html" with games_list=other_games none="No other active games" %}
 			</div>
             <h3 class="panel-header">Finished games</h3>
             <div class="list-group" >
-				{% include "game_list_snippet.html" with games_list=first_finished_games %}
-				{% include "game_list_snippet.html" with games_list=second_finished_games %}
+				{% include "game_list_snippet.html" with games_list=finished_games none="No finished games" %}
 			</div>
         </div>
 

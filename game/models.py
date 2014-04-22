@@ -21,8 +21,8 @@ DICE_CHOICES = (
 
 class GamesManager(models.Manager):
     def games_for_user(self, user):
-        first_games = super(GamesManager, self).get_query_set().filter(Q(first_player_id=user.id))
-        second_games = super(GamesManager, self).get_query_set().filter(Q(second_player_id=user.id))
+        first_games = super(GamesManager, self).get_query_set().filter(first_player_id=user.id)
+        second_games = super(GamesManager, self).get_query_set().filter(second_player_id=user.id)
         return first_games, second_games
 
     def new_game(self, invitation):

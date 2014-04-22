@@ -25,12 +25,9 @@ def home(request):
         second_finished_games = second_games.exclude(status='A')
         
         invitations = request.user.invitations_received.all()
-        context = {'first_other_games': first_other_games,
-                   'first_waiting_games': first_waiting_games,
-                   'first_finished_games': first_finished_games,
-                   'second_other_games': second_other_games,
-                   'second_waiting_games': second_waiting_games,
-                   'second_finished_games': second_finished_games,
+        context = {'other_games': list(first_other_games) + list(second_other_games),
+                   'waiting_games': list(first_waiting_games) + list(second_waiting_games),
+                   'finished_games': list(first_finished_games) + list(second_finished_games),
                    'invitations': invitations}
     else:
         return redirect('login')
