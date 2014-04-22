@@ -1,5 +1,5 @@
-from django.forms import ModelForm
-from .models import Move, Invitation
+from django.forms import ModelForm, ModelChoiceField
+from .models import Move, Invitation, User
 from django.core.exceptions import ValidationError
 
 class MoveForm(ModelForm):
@@ -21,6 +21,8 @@ class MoveForm(ModelForm):
 
 
 class InvitationForm(ModelForm):
+    to_user = ModelChoiceField(queryset=User.objects.order_by('username'))
+
     class Meta:
         model = Invitation
         exclude = ['from_user']
