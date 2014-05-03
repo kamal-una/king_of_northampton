@@ -10,7 +10,7 @@
     </facet>
     <facet type="google-appengine-python" name="Google App Engine (Python)">
       <configuration>
-        <option name="rootFolder" value="C:\Users\Kamal\Documents\GitHub\king_of_northampton_google login" />
+        <option name="rootFolder" value="C:\Users\Kamal\Documents\GitHub\king_of_northampton" />
         <option name="sdkFolder" value="C:\Program Files (x86)\Google\google_appengine" />
         <option name="templatesFolder" value="" />
         <option name="oauth2" value="false" />
