@@ -17,6 +17,10 @@ MANAGERS = ADMINS
 # Activate django-dbindexer for the default database
 DATABASES['default'] = {'ENGINE': 'dbindexer', 'TARGET': DATABASES['default']}
 
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+)
+
 AUTOLOAD_SITECONF = 'indexes'
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False

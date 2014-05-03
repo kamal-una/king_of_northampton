@@ -12,6 +12,7 @@
             {% csrf_token %}
             {{ form|crispy }}
             <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign in" />
+            <a href="{{ google_signup_url }}" class="btn btn-lg btn-primary btn-block">Sign in with Google Account</a>
             <a href="{% url 'signup' %}" class="btn btn btn-lg btn-block btn-success">Register</a>
             <input type="hidden" name="next" value="{{ next }}" />
         </form>

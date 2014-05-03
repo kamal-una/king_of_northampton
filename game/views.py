@@ -2,12 +2,15 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views.generic import CreateView
-from django.contrib.auth.forms import UserCreationForm
 from django.core.urlresolvers import reverse_lazy
-from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
-from .models import Invitation, Game
+from .models import Invitation, Game, User
 from .forms import InvitationForm
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
+from google.appengine.api import users
+
 import json
 
 
@@ -79,8 +82,35 @@ def my_move(request, pk):
 
 class SignUpView(CreateView):
     form_class = UserCreationForm
-    template_name = "signup.html"
+    template_name = 'signup.html'
     success_url = reverse_lazy('home')
+
+
+def google_signup(request):
+    if not request.user.is_authenticated():
+        google_user = users.get_current_user()
+        if google_user:
+            # check the user doesn't already exist
+            try:
+                find_user = User.objects.get(username=google_user.nickname(),
+                                             email=google_user.email())
+            except User.DoesNotExist:
+                find_user = None
+
+            if not find_user:
+                new_user = User.objects.create_user(google_user.nickname(),
+                                                    google_user.email(),
+                                                    google_user.user_id())
+                # stop someone logging in normally into this account
+                new_user.is_active = False
+                new_user.save()
+
+            new_user = authenticate(username=google_user.nickname(),
+                                    email=google_user.email(),
+                                    password=google_user.user_id())
+            if new_user is not None:
+                login(request, new_user)
+    return redirect('home')
 
 
 @login_required
@@ -93,7 +123,7 @@ def new_invitation(request):
             return redirect('home')
     else:
         form = InvitationForm()
-    return render(request, "new_invitation.html", {'form': form})
+    return render(request, 'new_invitation.html', {'form': form})
 
 
 @login_required
@@ -111,4 +141,4 @@ def accept_invitation(request, pk):
             invitation.delete()
             return redirect('home')
     else:
-        return render(request, "accept_invitation.html", {'invitation': invitation})
+        return render(request, 'accept_invitation.html', {'invitation': invitation})
