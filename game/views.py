@@ -58,8 +58,11 @@ def game_detail(request, pk):
             last_move_roll = last_move.roll
             read_move_from_datastore = False
         else:
-            channel.send_message(str(game.first_player) + str(game.id), '1')
-            channel.send_message(str(game.second_player) + str(game.id), '1')
+            # send message to other player...
+            if request.user == game.first_player:
+                channel.send_message(str(game.second_player) + str(game.id), '1')
+            else:
+                channel.send_message(str(game.first_player) + str(game.id), '1')
 
     if read_move_from_datastore:
         game_moves, last_move_roll = game.as_game()
