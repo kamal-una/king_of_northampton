@@ -10,7 +10,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from google.appengine.api import users, channel
-import json
 
 
 def home(request):
@@ -74,18 +73,6 @@ def game_detail(request, pk):
 
     html = render(request, 'game_detail.html', context)
     return HttpResponse(html)
-
-
-def my_move(request, pk):
-    game = get_object_or_404(Game, pk=pk)
-    response_data = {}
-
-    if game.my_move(request.user):
-        response_data['mymove'] = 'true'
-    else:
-        response_data['mymove'] = 'false'
-
-    return HttpResponse(json.dumps(response_data), content_type="application/json")
 
 
 class SignUpView(CreateView):
