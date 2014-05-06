@@ -11,7 +11,6 @@ urlpatterns = patterns('',
     url(r'^googlesignup/$', 'game.views.google_signup', name='google_signup'),
 
     url(r'^game/(?P<pk>\d+)/$', 'game.views.game_detail', name='game_detail'),
-    url(r'^mymove/(?P<pk>\d+)/$', 'game.views.my_move', name='mymove'),
 
     url(r'^invite/$', 'game.views.new_invitation', name='invite'),
     url(r'^invitation/(?P<pk>\d+)/$', 'game.views.accept_invitation', name='accept_invitation'),
