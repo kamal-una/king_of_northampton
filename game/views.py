@@ -9,7 +9,7 @@ from .forms import InvitationForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
-from google.appengine.api import users
+from google.appengine.api import users, channel
 import json
 
 
@@ -44,6 +44,8 @@ def game_detail(request, pk):
     game = get_object_or_404(Game, pk=pk)
     read_move_from_datastore = True
 
+    token = channel.create_channel(str(request.user) + str(game.id))
+
     if request.method == 'POST':
         data = request.POST
         last_move = game.do_move(data)
@@ -55,13 +57,17 @@ def game_detail(request, pk):
             game.append_move(game_moves, last_move)
             last_move_roll = last_move.roll
             read_move_from_datastore = False
+        else:
+            channel.send_message(str(game.first_player) + str(game.id), '1')
+            channel.send_message(str(game.second_player) + str(game.id), '1')
 
     if read_move_from_datastore:
         game_moves, last_move_roll = game.as_game()
 
     context = {'game': game,
                'game_moves': game_moves,
-               'last_move_roll': last_move_roll}
+               'last_move_roll': last_move_roll,
+               'token': token}
 
     html = render(request, 'game_detail.html', context)
     return HttpResponse(html)

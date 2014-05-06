@@ -87,27 +87,18 @@
                   <h4>It's not your go yet.</h4>
                   Wait for your opponent to play their turn...
                 </div>
+                <script type="text/javascript" src="/_ah/channel/jsapi"></script>
                 <script>
-                    function ajax_request() {
-                      var url = $(location).attr('href');
-                      var game_id = url.split("/")[4]
-                      var ajax_url = "/mymove/".concat(game_id)
-                      $.ajax({
-                        url: ajax_url,
-                        error: function(aj_data) {
-                        },
-                        success: function(aj_data) {
-                          if (aj_data.mymove == 'true') {
+                    onMessage = function(msg) {
+                        if (msg.data = "1") {
                             location.reload();
-                          } else {
-                            setTimeout(function() { ajax_request(); }, 5000);
-                          }
-                        },
-                        contentType: 'application/json'
-                      });
-                    }
-                    ajax_request();
+                        }
+                    };
+                    channel = new goog.appengine.Channel('{{ token }}');
+                    socket = channel.open();
+                    socket.onmessage = onMessage;
                 </script>
+
             {% endif %}
         {% elif game.status == "F" and user == game.first_player %}
             <div class="alert alert-success">
